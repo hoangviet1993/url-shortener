@@ -1,0 +1,4 @@
+.DS_Store
+# Keep design mocks private.
+/design
+/images
