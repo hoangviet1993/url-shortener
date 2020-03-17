@@ -1,0 +1,17 @@
+.Toolbar {
+  background-color: white;
+  color: hsl(257, 7%, 63%);
+  min-height: 60px;
+}
+
+.NavbarButtonLabel {
+  font-size: 18px;
+  text-transform: none;
+}
+
+.shortly-button-container-mobile {
+  flex-grow: 1;
+}
+.resources-button-container {
+  flex-grow: 1;
+}
