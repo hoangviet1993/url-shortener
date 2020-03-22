@@ -54,6 +54,7 @@ const useStyles = makeStyles((theme: Theme) =>
     textColumn: {
       maxWidth: '650px',
       paddingLeft: '60px',
+      paddingRight: '50px',
     },
     workingSvg: {
       maxWidth: '100%',
@@ -109,26 +110,26 @@ const Hero = () => {
           </Grid>
         </Hidden>
         <Hidden smDown>
-        <Grid item md={7}>
-          <div className={classes.textColumn}>   
-            <Typography
-              className={classes.headerText}
-              variant="h1"
-              gutterBottom>
-              More than just shorter links
-            </Typography>
-            <Typography
-              className={classes.subHeaderText}
-              variant="h5"
-              gutterBottom>
-              Build your brand’s recognition and get detailed insights 
-              on how your links are performing.
-            </Typography>
-            <Button className={classes.getStartedButton}>
-              Get Started
-            </Button>
-          </div>
-        </Grid>
+          <Grid item md={7}>
+            <div className={classes.textColumn}>
+              <Typography
+                className={classes.headerText}
+                variant="h1"
+                gutterBottom>
+                More than just shorter links
+              </Typography>
+              <Typography
+                className={classes.subHeaderText}
+                variant="h5"
+                gutterBottom>
+                Build your brand’s recognition and get detailed insights
+                on how your links are performing.
+              </Typography>
+              <Button className={classes.getStartedButton}>
+                Get Started
+              </Button>
+            </div>
+          </Grid>
         </Hidden>
         <Hidden smDown>
           <Grid item md={5}>
