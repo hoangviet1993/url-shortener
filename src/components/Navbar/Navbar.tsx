@@ -1,5 +1,9 @@
 import { 
-  AppBar, Button, Toolbar, useMediaQuery, withStyles
+  AppBar,
+  Button,
+  Toolbar,
+  useMediaQuery,
+  withStyles
 } from '@material-ui/core';
 import React from 'react';
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu'
@@ -31,12 +35,25 @@ const PricingButtonMargin =  {
   margin: '0 15px'
 };
 
+const toolbarStyleMobile = {
+  backgroundColor: 'white',
+  color: 'hsl(257, 7%, 63%)',
+  minHeight: '60px',
+}
+
+const toolbarStyleDesktop = {
+  backgroundColor: 'white',
+  color: 'hsl(257, 7%, 63%)',
+  minHeight: '60px',
+  paddingLeft: '52px',
+}
+
 const Navbar = () => {
   const matchesMaxWidth = useMediaQuery('(max-width:750px)');
   if (matchesMaxWidth) {
     return (
       <AppBar elevation={0} position="static">
-        <Toolbar className="Toolbar">
+        <Toolbar style={toolbarStyleMobile}>
           <div className="shortly-button-container-mobile">
             <Button
                 href="/"
@@ -51,7 +68,7 @@ const Navbar = () => {
   } else {
     return (
       <AppBar elevation={0} position="static">
-        <Toolbar className="Toolbar">
+        <Toolbar style={toolbarStyleDesktop}>
           <Button
             href="/"
           >
