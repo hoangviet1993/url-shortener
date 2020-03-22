@@ -32,10 +32,10 @@ const PricingButtonMargin =  {
 };
 
 const Navbar = () => {
-  const matchesMaxWidth = useMediaQuery('(max-width:650px)');
+  const matchesMaxWidth = useMediaQuery('(max-width:750px)');
   if (matchesMaxWidth) {
     return (
-      <AppBar position="static">
+      <AppBar elevation={0} position="static">
         <Toolbar className="Toolbar">
           <div className="shortly-button-container-mobile">
             <Button
@@ -50,7 +50,7 @@ const Navbar = () => {
     );
   } else {
     return (
-      <AppBar position="static">
+      <AppBar elevation={0} position="static">
         <Toolbar className="Toolbar">
           <Button
             href="/"
