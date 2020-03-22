@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Sections/Hero/Hero';
+import ShortenDemo from './components/Sections/ShortenDemo/ShortenDemo'
 
 const theme = createMuiTheme({
   typography: {
@@ -24,10 +25,8 @@ function App() {
   return (
     <MuiThemeProvider theme={theme}>
       <Navbar />
-      <Hero />      
-      <p>
-        Shorten It section!
-      </p>
+      <Hero />
+      <ShortenDemo />
       <p>
         Advanced Statistics
       </p>
