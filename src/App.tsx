@@ -2,6 +2,8 @@ import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import AdvancedStatistics 
+from './components/Sections/AdvancedStatistics/AdvancedStatistics';
 import Hero from './components/Sections/Hero/Hero';
 import ShortenDemo from './components/Sections/ShortenDemo/ShortenDemo'
 
@@ -24,37 +26,10 @@ theme.typography.h1 = {
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
-      <Navbar />
-      <Hero />
-      <ShortenDemo />
-      <p>
-        Advanced Statistics
-      </p>
-      <p>
-        Track how your links are performing across the web with our 
-        advanced statistics dashboard.
-      </p>
-      <p>
-        Brand Recognition
-      </p>
-      <p>
-        Boost your brand recognition with each click. Generic links don’t 
-        mean a thing. Branded links help instil confidence in your content.
-      </p>
-      <p>
-        Detailed Records
-      </p>
-      <p>
-        Gain insights into who is clicking your links. Knowing when and where 
-        people engage with your content helps inform better decisions.
-      </p>
-      <p>
-        Fully Customizable
-      </p>
-      <p>
-        Improve brand awareness and content discoverability through customizable 
-        links, supercharging audience engagement.
-      </p>
+      <Navbar/>
+      <Hero/>
+      <ShortenDemo/>
+      <AdvancedStatistics/>
       <p>
         Boost your links today
       </p>

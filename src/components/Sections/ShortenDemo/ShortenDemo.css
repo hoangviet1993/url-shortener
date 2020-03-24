@@ -1,11 +1,11 @@
 .split-color-container {
   padding: 30px 0;
   background: -moz-linear-gradient(
-    top, rgb(255,255,255) 50%, hsl(0, 0%, 75%) 50%);
+    top, rgb(255,255,255) 50%, #F0F1F6);
   background: -webkit-linear-gradient(
-    top, rgb(255,255,255) 50%,hsl(0, 0%, 75%) 50%);
+    top, rgb(255,255,255) 50%,#F0F1F6);
   background: linear-gradient(
-    to bottom, rgb(255,255,255) 50%,hsl(0, 0%, 75%) 50%);
+    to bottom, rgb(255,255,255) 50%,#F0F1F6);
 }
 
 .violet-container {
