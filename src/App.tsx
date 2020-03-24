@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import AdvancedStatistics 
 from './components/Sections/AdvancedStatistics/AdvancedStatistics';
+import BoostYourLink from './components/Sections/BoostYourLink/BoostYourLink';
 import Hero from './components/Sections/Hero/Hero';
 import ShortenDemo from './components/Sections/ShortenDemo/ShortenDemo'
 
@@ -30,12 +31,7 @@ function App() {
       <Hero/>
       <ShortenDemo/>
       <AdvancedStatistics/>
-      <p>
-        Boost your links today
-      </p>
-      <button>
-        Get Started
-      </button>
+      <BoostYourLink/>
     </MuiThemeProvider>
   );
 }
