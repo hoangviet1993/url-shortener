@@ -1,0 +1,16 @@
+a:hover path {
+  fill: hsl(180, 66%, 49%);
+}
+
+a:active path {
+  fill: hsl(180, 66%, 49%);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(180, 66%, 49%);
+}
