@@ -13,10 +13,7 @@
   padding: 30px 40px;
   background-image: url("bg-shorten-desktop.svg");
   background-color: hsl(257, 27%, 26%);
-<<<<<<< HEAD
-=======
   background-size: cover;
->>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -24,8 +21,6 @@
   -o-border-radius: 10px;
 }
 
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 600px) {
   .violet-container {
     background-image: url("bg-shorten-mobile.svg");
@@ -33,7 +28,6 @@
   }
 }
 
->>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
 .shorten-demo {
   min-width: 100%;
 }

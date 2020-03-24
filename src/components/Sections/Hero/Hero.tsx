@@ -20,12 +20,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     getStartedButton: {
       '&:hover': {
-<<<<<<< HEAD
-        backgroundColor: 'white',
-        color: 'hsl(180, 66%, 49%)'
-=======
         backgroundColor: '#9BE3E2',
->>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
       },
       backgroundColor: 'hsl(180, 66%, 49%)',
       borderRadius: '30px',
@@ -45,11 +40,7 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingTop: '40px',
     },
     mobileTextColumnContainer: {
-<<<<<<< HEAD
-      padding: '0 60px',
-=======
       padding: '0 30px',
->>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
     },
     mobileWorkingSvgContainer: {
       paddingBottom: '30px',
@@ -77,12 +68,9 @@ const Hero = () => {
       <Grid
         container
         spacing={0}
-<<<<<<< HEAD
-=======
         direction="row"
         justify="center"
         alignItems="center"
->>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
       >
         <Hidden mdUp>
           <Grid
@@ -126,24 +114,6 @@ const Hero = () => {
         <Hidden smDown>
           <Grid item md={7}>
             <div className={classes.textColumn}>
-<<<<<<< HEAD
-              <Typography
-                className={classes.headerText}
-                variant="h1"
-                gutterBottom>
-                More than just shorter links
-              </Typography>
-              <Typography
-                className={classes.subHeaderText}
-                variant="h5"
-                gutterBottom>
-                Build your brand’s recognition and get detailed insights
-                on how your links are performing.
-              </Typography>
-              <Button className={classes.getStartedButton}>
-                Get Started
-              </Button>
-=======
               <Grid
                 container
                 direction="column"
@@ -167,7 +137,6 @@ const Hero = () => {
                   Get Started
                 </Button>
               </Grid>
->>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
             </div>
           </Grid>
         </Hidden>

@@ -25,8 +25,6 @@ theme.typography.h1 = {
   },
 };
 
-<<<<<<< HEAD
-=======
 theme.typography.h3 = {
   fontSize: '1.5rem',
   [theme.breakpoints.up('sm')]: {
@@ -40,7 +38,6 @@ theme.typography.h3 = {
   },
 };
 
->>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
 function App() {
   return (
     <MuiThemeProvider theme={theme}>

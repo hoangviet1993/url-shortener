@@ -31,12 +31,7 @@ const ShortenButton = withStyles({
   },
   root: {
     '&:hover': {
-<<<<<<< HEAD
-      backgroundColor: 'white',
-      color: 'hsl(180, 66%, 49%)'
-=======
       backgroundColor: '#9BE3E2',
->>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
     },
     backgroundColor: 'hsl(180, 66%, 49%)',
     borderRadius: '5px',
