@@ -100,6 +100,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Branded Links"
@@ -111,6 +112,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Branded Links"
@@ -122,6 +124,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Analytics"
@@ -150,6 +153,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Blog"
@@ -161,6 +165,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Developers"
@@ -172,6 +177,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Support"
@@ -200,6 +206,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="About"
@@ -211,6 +218,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Our Teams"
@@ -222,6 +230,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Career"
@@ -233,6 +242,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Contact"
@@ -252,6 +262,7 @@ const Footer = () => {
                 >
                   <div className={classes.footerSocialMediaLogoContainer}>
                     <a
+                      className="footerSvg"
                       href="/"
                       target="_blank"
                       title="Facebook"
@@ -261,6 +272,7 @@ const Footer = () => {
                   </div>
                   <div className={classes.footerSocialMediaLogoContainer}>
                     <a
+                      className="footerSvg"
                       href="/"
                       target="_blank"
                       title="Twitter"
@@ -270,6 +282,7 @@ const Footer = () => {
                   </div>
                   <div className={classes.footerSocialMediaLogoContainer}>
                     <a
+                      className="footerSvg"
                       href="/"
                       target="_blank"
                       title="Pinterest"
@@ -279,6 +292,7 @@ const Footer = () => {
                   </div>
                   <div className={classes.instagramLogoContainer}>
                     <a
+                      className="footerSvg"
                       href="/"
                       target="_blank"
                       title="Instagram"
@@ -329,6 +343,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Branded Links"
@@ -340,6 +355,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Branded Links"
@@ -351,6 +367,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Analytics"
@@ -379,6 +396,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Blog"
@@ -390,6 +408,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Developers"
@@ -401,6 +420,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Support"
@@ -429,6 +449,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="About"
@@ -440,6 +461,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Our Teams"
@@ -451,6 +473,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Career"
@@ -462,6 +485,7 @@ const Footer = () => {
                   <Typography variant="body1" component={'span'}>
                     <Box textAlign="center" m={1}>
                       <a
+                        className="footer"
                         href="/"
                         target="_blank"
                         title="Contact"
@@ -481,6 +505,7 @@ const Footer = () => {
                 >
                   <div className={classes.footerSocialMediaLogoContainer}>
                     <a
+                      className="footerSvg"
                       href="/"
                       target="_blank"
                       title="Facebook"
@@ -490,6 +515,7 @@ const Footer = () => {
                   </div>
                   <div className={classes.footerSocialMediaLogoContainer}>
                     <a
+                      className="footerSvg"
                       href="/"
                       target="_blank"
                       title="Twitter"
@@ -499,6 +525,7 @@ const Footer = () => {
                   </div>
                   <div className={classes.footerSocialMediaLogoContainer}>
                     <a
+                      className="footerSvg"
                       href="/"
                       target="_blank"
                       title="Pinterest"
@@ -508,6 +535,7 @@ const Footer = () => {
                   </div>
                   <div className={classes.instagramLogoContainer}>
                     <a
+                      className="footerSvg"
                       href="/"
                       target="_blank"
                       title="Pinterest"
