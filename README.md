@@ -1,5 +1,7 @@
 # Frontend Mentor - Shortly URL shortening API Challenge
 
+[Preview Website](https://url-shortener-landing-page.now.sh/)
+
 ![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋

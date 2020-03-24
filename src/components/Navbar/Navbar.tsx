@@ -14,8 +14,7 @@ import './Navbar.css';
 const SignupButton = withStyles({
   root: {
     '&:hover': {
-      backgroundColor: 'white',
-      color: 'hsl(180, 66%, 49%)'
+      backgroundColor: '#9BE3E2',
     },
     backgroundColor: 'hsl(180, 66%, 49%)',
     borderRadius: '30px',
@@ -26,14 +25,6 @@ const SignupButton = withStyles({
     textTransform: 'none',
   },
 })(Button);
-
-const FeaturesButtonMargin = {
-  marginLeft: '30px'
-}
-
-const PricingButtonMargin =  {
-  margin: '0 15px'
-};
 
 const toolbarStyleMobile = {
   backgroundColor: 'white',
@@ -55,11 +46,7 @@ const Navbar = () => {
       <AppBar elevation={0} position="static">
         <Toolbar style={toolbarStyleMobile}>
           <div className="shortly-button-container-mobile">
-            <Button
-                href="/"
-            >
-              <LogoSvg/>
-            </Button>
+            <LogoSvg/>
           </div>
           <HamburgerMenu />
         </Toolbar>
@@ -69,43 +56,41 @@ const Navbar = () => {
     return (
       <AppBar elevation={0} position="static">
         <Toolbar style={toolbarStyleDesktop}>
-          <Button
+          <LogoSvg className="ShortlySvg"/>
+          <a
+            className="navbarLink"
             href="/"
-          >
-            <LogoSvg className="ShortlySvg"/>
-          </Button>
-          <Button
-            classes={{ label: 'NavbarButtonLabel' }}
-            color="inherit"
-            style={FeaturesButtonMargin}
-            href="/features"
+            target="_blank"
+            title="Features"
           >
             Features
-          </Button>
-          <Button
-            classes={{ label: 'NavbarButtonLabel' }}
-            color="inherit"
-            style={PricingButtonMargin}
-            href="/pricing"
+          </a>
+          <a
+            className="navbarLink"
+            href="/"
+            target="_blank"
+            title="Pricing"
           >
             Pricing
-          </Button>
+          </a>
           <div className="resources-button-container">
-            <Button
-              classes={{ label: 'NavbarButtonLabel' }}
-              color="inherit"
-              href="/resources"
+            <a
+              className="navbarLink"
+              href="/"
+              target="_blank"
+              title="Resources"
             >
               Resources
-            </Button>
+            </a>
           </div>
-          <Button 
-            classes={{ label: 'NavbarButtonLabel' }}
-            color="inherit"
-            href="/login"
+          <a
+            className="navbarLink"
+            href="/"
+            target="_blank"
+            title="Login"
           >
             Login
-          </Button>
+          </a>
           <SignupButton
             href="/signup"
           >
