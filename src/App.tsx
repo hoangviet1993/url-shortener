@@ -1,6 +1,7 @@
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 import React from 'react';
 import './App.css';
+import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import AdvancedStatistics 
 from './components/Sections/AdvancedStatistics/AdvancedStatistics';
@@ -32,6 +33,7 @@ function App() {
       <ShortenDemo/>
       <AdvancedStatistics/>
       <BoostYourLink/>
+      <Footer/>
     </MuiThemeProvider>
   );
 }
