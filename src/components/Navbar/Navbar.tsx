@@ -14,8 +14,12 @@ import './Navbar.css';
 const SignupButton = withStyles({
   root: {
     '&:hover': {
+<<<<<<< HEAD
       backgroundColor: 'white',
       color: 'hsl(180, 66%, 49%)'
+=======
+      backgroundColor: '#9BE3E2',
+>>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
     },
     backgroundColor: 'hsl(180, 66%, 49%)',
     borderRadius: '30px',
@@ -27,6 +31,7 @@ const SignupButton = withStyles({
   },
 })(Button);
 
+<<<<<<< HEAD
 const FeaturesButtonMargin = {
   marginLeft: '30px'
 }
@@ -35,6 +40,8 @@ const PricingButtonMargin =  {
   margin: '0 15px'
 };
 
+=======
+>>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
 const toolbarStyleMobile = {
   backgroundColor: 'white',
   color: 'hsl(257, 7%, 63%)',
@@ -55,11 +62,15 @@ const Navbar = () => {
       <AppBar elevation={0} position="static">
         <Toolbar style={toolbarStyleMobile}>
           <div className="shortly-button-container-mobile">
+<<<<<<< HEAD
             <Button
                 href="/"
             >
               <LogoSvg/>
             </Button>
+=======
+            <LogoSvg/>
+>>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
           </div>
           <HamburgerMenu />
         </Toolbar>
@@ -69,6 +80,7 @@ const Navbar = () => {
     return (
       <AppBar elevation={0} position="static">
         <Toolbar style={toolbarStyleDesktop}>
+<<<<<<< HEAD
           <Button
             href="/"
           >
@@ -106,6 +118,43 @@ const Navbar = () => {
           >
             Login
           </Button>
+=======
+          <LogoSvg className="ShortlySvg"/>
+          <a
+            className="navbarLink"
+            href="/"
+            target="_blank"
+            title="Features"
+          >
+            Features
+          </a>
+          <a
+            className="navbarLink"
+            href="/"
+            target="_blank"
+            title="Pricing"
+          >
+            Pricing
+          </a>
+          <div className="resources-button-container">
+            <a
+              className="navbarLink"
+              href="/"
+              target="_blank"
+              title="Resources"
+            >
+              Resources
+            </a>
+          </div>
+          <a
+            className="navbarLink"
+            href="/"
+            target="_blank"
+            title="Login"
+          >
+            Login
+          </a>
+>>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
           <SignupButton
             href="/signup"
           >

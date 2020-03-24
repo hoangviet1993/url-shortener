@@ -3,6 +3,20 @@
   text-transform: none;
 }
 
+<<<<<<< HEAD
+=======
+a.navbarLink {
+  color: rgb(158, 154, 167);
+  font-size: 18px;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+a.navbarLink:hover, a.navbarLink:active, a.navbarLink:focus {
+  color: rgb(0,0,0);
+}
+
+>>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
 .shortly-button-container-mobile {
   flex-grow: 1;
 }

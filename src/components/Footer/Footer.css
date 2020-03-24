@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 a.footerSvg:hover path {
   fill: hsl(180, 66%, 49%);
 }
 
 a.footerSvg:active path {
+=======
+a.footerSvg:hover path,
+a.footerSvg:active path,
+a.footerSvg:focus path{
+>>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
   fill: hsl(180, 66%, 49%);
 }
 
@@ -11,6 +17,12 @@ a.footer {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 a.footer:hover {
+=======
+a.footer:hover,
+a.footer:active,
+a.footer:focus {
+>>>>>>> 0dfa0ba596426927dd85bf7bd4575548de8f4d6f
   color: hsl(180, 66%, 49%);
 }
