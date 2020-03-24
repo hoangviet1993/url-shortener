@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginTop: '40px',
     },
     lineSvgContainerMobile: {
-      marginBottom: '38px',
+      marginBottom: '36px',
     },
     lineSvgMobile: {
       stroke: 'hsl(180, 66%, 49%)',
