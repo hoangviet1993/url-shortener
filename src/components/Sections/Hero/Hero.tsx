@@ -20,8 +20,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     getStartedButton: {
       '&:hover': {
-        backgroundColor: 'white',
-        color: 'hsl(180, 66%, 49%)'
+        backgroundColor: '#9BE3E2',
       },
       backgroundColor: 'hsl(180, 66%, 49%)',
       borderRadius: '30px',
@@ -41,7 +40,7 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingTop: '40px',
     },
     mobileTextColumnContainer: {
-      padding: '0 60px',
+      padding: '0 30px',
     },
     mobileWorkingSvgContainer: {
       paddingBottom: '30px',
@@ -69,6 +68,9 @@ const Hero = () => {
       <Grid
         container
         spacing={0}
+        direction="row"
+        justify="center"
+        alignItems="center"
       >
         <Hidden mdUp>
           <Grid
@@ -112,22 +114,29 @@ const Hero = () => {
         <Hidden smDown>
           <Grid item md={7}>
             <div className={classes.textColumn}>
-              <Typography
-                className={classes.headerText}
-                variant="h1"
-                gutterBottom>
-                More than just shorter links
-              </Typography>
-              <Typography
-                className={classes.subHeaderText}
-                variant="h5"
-                gutterBottom>
-                Build your brand’s recognition and get detailed insights
-                on how your links are performing.
-              </Typography>
-              <Button className={classes.getStartedButton}>
-                Get Started
-              </Button>
+              <Grid
+                container
+                direction="column"
+                justify="center"
+                alignItems="flex-start"
+              >
+                <Typography
+                  className={classes.headerText}
+                  variant="h1"
+                  gutterBottom>
+                  More than just shorter links
+                </Typography>
+                <Typography
+                  className={classes.subHeaderText}
+                  variant="h5"
+                  gutterBottom>
+                  Build your brand’s recognition and get detailed insights
+                  on how your links are performing.
+                </Typography>
+                <Button className={classes.getStartedButton}>
+                  Get Started
+                </Button>
+              </Grid>
             </div>
           </Grid>
         </Hidden>
