@@ -63,7 +63,7 @@ const BoostYourLink = () => {
           variant="h3"
         >
           <Box textAlign="center" m={1}>
-            Boost your link today
+            Boost your links today
           </Box>
         </Typography>
         <Button className={classes.getStartedButton}>
