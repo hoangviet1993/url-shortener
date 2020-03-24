@@ -17,6 +17,9 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: '#F0F1F6',
       paddingBottom: '80px',
     },
+    brandRecognitionContainerMobile: {
+      marginTop: '70px',
+    },
     container: {
       display: 'grid',
       gridGap: theme.spacing(1),
@@ -134,11 +137,13 @@ const AdvancedStatistics = () => {
             direction="column"
             justify="center"
             alignItems="center">
-            <LinkedFeatureBox
-              type={featureBoxInfoDefinitions[0].type}
-              headerText={featureBoxInfoDefinitions[0].headerText}
-              subHeaderText={featureBoxInfoDefinitions[0].subHeaderText}
-            />
+            <div className={classes.brandRecognitionContainerMobile}>
+              <LinkedFeatureBox
+                type={featureBoxInfoDefinitions[0].type}
+                headerText={featureBoxInfoDefinitions[0].headerText}
+                subHeaderText={featureBoxInfoDefinitions[0].subHeaderText}
+              />
+            </div>
             <ConnectingLine/>
             <LinkedFeatureBox
               type={featureBoxInfoDefinitions[1].type}
