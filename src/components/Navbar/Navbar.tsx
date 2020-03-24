@@ -36,7 +36,7 @@ const toolbarStyleDesktop = {
   backgroundColor: 'white',
   color: 'hsl(257, 7%, 63%)',
   minHeight: '60px',
-  paddingLeft: '52px',
+  padding: '0 60px',
 }
 
 const Navbar = () => {
