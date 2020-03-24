@@ -1,0 +1,16 @@
+a.footerSvg:hover path {
+  fill: hsl(180, 66%, 49%);
+}
+
+a.footerSvg:active path {
+  fill: hsl(180, 66%, 49%);
+}
+
+a.footer {
+  color: white;
+  text-decoration: none;
+}
+
+a.footer:hover {
+  color: hsl(180, 66%, 49%);
+}
