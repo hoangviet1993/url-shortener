@@ -13,6 +13,8 @@ import React from 'react';
 import isURL from 'validator/lib/isURL';
 import * as constants from '../../constants/';
 import * as LocalStorageService from '../../service/LocalStorageService/';
+import * as RelinkService from '../../service/RelinkService';
+import * as types from '../../types/';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -39,9 +41,13 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: 'white',
       borderRadius: '10px',
       boxSizing: 'border-box',
+      display: 'block',
       fontSize: '18px',
       margin: 'auto',
+      overflow: 'hidden',
       padding: '12px',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap',
       width: '100%',
     },
   }),
@@ -62,7 +68,7 @@ const ShortenButton = withStyles({
     color: 'white',
     fontSize: '18px',
     minWidth: '100%',
-    padding: '6px 20px',
+    padding: '6px 30px',
     textTransform: 'none',
     width: '100%',
   },
@@ -81,19 +87,40 @@ function validateUrl(value: string): string | null {
   return error;
 }
 
-const LinkForm = () => {
+const LinkForm = (props: types.ILinkFormProp) => {
   const classes = useStyles();
-  const urlInputInitialValues: constants.IFormValues = { urlInput: ''};
+  const urlInputInitialValues: types.IFormValues = {urlInput: ''};
   return (
     <div>
       <Hidden smDown>
         <Formik
           initialValues={urlInputInitialValues}
           onSubmit={(values, actions) => {
-            if (!LocalStorageService.loadHashIDFromLocalStorage(
+            if (!LocalStorageService.isUrlInLocalStorage(
               values.urlInput)) {
-              LocalStorageService.saveUrlToLocalStorage(
-                values.urlInput, actions);
+              RelinkService.createLinkHashID(values.urlInput)
+                .then((data) => {
+                  const newLink: types.ILink = {
+                    hashID: data.hashid,
+                    url: data.url,
+                  };
+                  LocalStorageService.saveNewLinkToLocalStorage(
+                    newLink, actions);
+                  LocalStorageService.saveToLocalStorage(
+                    data.url, data.hashid, actions);
+                  const shortlyLinks = localStorage.getItem(
+                    constants.serializedShortlyKey);
+                  props.setshortlyLinks(shortlyLinks);
+                })
+                .catch((reLinkError) => {
+                  if (reLinkError.response.data) {
+                    actions.setFieldError(
+                      constants.urlFieldInputName,
+                      reLinkError.response.data.url);
+                  } else {
+                    throw reLinkError;
+                  }
+                });
             } else {
               actions.setFieldError(
                 constants.urlFieldInputName, 'URL already shortened');
@@ -149,10 +176,31 @@ const LinkForm = () => {
           <Formik
             initialValues={urlInputInitialValues}
             onSubmit={(values, actions) => {
-              if (!LocalStorageService.loadHashIDFromLocalStorage(
+              if (!LocalStorageService.isUrlInLocalStorage(
                 values.urlInput)) {
-                LocalStorageService.saveUrlToLocalStorage(
-                  values.urlInput, actions);
+                RelinkService.createLinkHashID(values.urlInput)
+                  .then((data) => {
+                    const newLink: types.ILink = {
+                      hashID: data.hashid,
+                      url: data.url,
+                    };
+                    LocalStorageService.saveNewLinkToLocalStorage(
+                      newLink, actions);
+                    LocalStorageService.saveToLocalStorage(
+                      data.url, data.hashid, actions);
+                    const shortlyLinks = localStorage.getItem(
+                      constants.serializedShortlyKey);
+                    props.setshortlyLinks(shortlyLinks);
+                  })
+                  .catch((reLinkError) => {
+                    if (reLinkError.response.data) {
+                      actions.setFieldError(
+                        constants.urlFieldInputName,
+                        reLinkError.response.data.url);
+                    } else {
+                      throw reLinkError;
+                    }
+                  });
               } else {
                 actions.setFieldError(
                   constants.urlFieldInputName, 'URL already shortened');

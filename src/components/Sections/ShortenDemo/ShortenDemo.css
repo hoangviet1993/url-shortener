@@ -10,6 +10,7 @@
 
 .violet-container {
   margin: 0 60px;
+  overflow: hidden;
   padding: 30px 40px;
   background-image: url("bg-shorten-desktop.svg");
   background-color: hsl(257, 27%, 26%);
@@ -24,6 +25,5 @@
 @media screen and (max-width: 600px) {
   .violet-container {
     background-image: url("bg-shorten-mobile.svg");
-    margin: 0 30px;
   }
 }
