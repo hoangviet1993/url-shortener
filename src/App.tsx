@@ -7,7 +7,7 @@ import AdvancedStatistics
 from './components/Sections/AdvancedStatistics/AdvancedStatistics';
 import BoostYourLink from './components/Sections/BoostYourLink/BoostYourLink';
 import Hero from './components/Sections/Hero/Hero';
-import ShortenDemo from './components/Sections/ShortenDemo/ShortenDemo'
+import ShortenDemo from './components/Sections/ShortenDemo/ShortenDemo';
 
 const theme = createMuiTheme({
   typography: {
