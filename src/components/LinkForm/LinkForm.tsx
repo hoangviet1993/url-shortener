@@ -137,6 +137,7 @@ const LinkForm = (props: types.ILinkFormProp) => {
               >
                 <Grid item md={9} lg={10}>
                   <Field
+                    aria-label="URL input field"
                     className={
                       classes.linkInputTextField + (
                         errors.urlInput && touched.urlInput ?
@@ -211,6 +212,7 @@ const LinkForm = (props: types.ILinkFormProp) => {
               <Form>
                 <div className={classes.linkInputContainerMobile}>
                   <Field
+                    aria-label="URL input field"
                     className={
                       classes.linkInputTextField + (
                         errors.urlInput && touched.urlInput ?
