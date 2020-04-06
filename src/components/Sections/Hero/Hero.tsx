@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme: Theme) =>
       lineHeight: '1.2',
     },
     heroContainer: {
+      backgroundColor: 'rgb(255, 255, 255)',
       paddingBottom: '40px',
       paddingTop: '40px',
     },
