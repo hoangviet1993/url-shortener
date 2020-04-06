@@ -1,11 +1,9 @@
 import {
-  Button,
   createStyles,
   Grid,
   Hidden,
   makeStyles,
   Theme,
-  withStyles,
 } from '@material-ui/core';
 import React from 'react';
 import * as types from '../../types';
@@ -72,26 +70,6 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-const CopyButton = withStyles({
-  '@media (max-width: 960px)': {
-    root: {
-      width: '100%',
-    },
-  },
-  root: {
-    '&:hover': {
-      backgroundColor: '#9BE3E2',
-    },
-    backgroundColor: 'hsl(180, 66%, 49%)',
-    borderRadius: '5px',
-    color: 'white',
-    display: 'inline-flex',
-    fontSize: '12px',
-    padding: '6px 30px',
-    textTransform: 'none',
-  },
-})(Button);
-
 function ShortenedLink(props: types.IShortenedLinkProp) {
   const classes = useStyles();
   const redirectedLink = `https://rel.ink/${props.hashID}`;
@@ -109,9 +87,7 @@ function ShortenedLink(props: types.IShortenedLinkProp) {
               className={classes.originalLinkContainerDesktop}
               item
             >
-              <div >
-                {props.url}
-              </div>
+              {props.url}
             </Grid>
             <Grid
               className={classes.redirectLinkContainerDesktop}
@@ -125,9 +101,7 @@ function ShortenedLink(props: types.IShortenedLinkProp) {
               >
                 {redirectedLink}
               </a>
-              <CopyButton>
-                Copy
-              </CopyButton>
+              {props.children}
             </Grid>
           </Grid>
         </Hidden>
@@ -142,9 +116,7 @@ function ShortenedLink(props: types.IShortenedLinkProp) {
               className={classes.originalLinkContainerMobile}
               item
             >
-              <span>
-                {props.url}
-              </span>
+              {props.url}
             </Grid>
             <Grid
               className={classes.redirectLinkContainerMobile}
@@ -163,9 +135,7 @@ function ShortenedLink(props: types.IShortenedLinkProp) {
               className={classes.copyButtonContainerMobile}
               item
             >
-              <CopyButton>
-                Copy
-              </CopyButton>
+              {props.children}
             </Grid>
           </Grid>
         </Hidden>
