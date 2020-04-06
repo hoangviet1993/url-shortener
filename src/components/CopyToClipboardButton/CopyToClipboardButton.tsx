@@ -22,7 +22,7 @@ const CopyButton = withStyles({
     display: 'inline-flex',
     fontSize: '12px',
     fontWeight: 700,
-    minWidth: '104px',
+    minWidth: '110px',
     padding: '6px 30px',
     textTransform: 'none',
   },
