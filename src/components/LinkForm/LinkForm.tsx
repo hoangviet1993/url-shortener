@@ -25,7 +25,9 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     errorMessage: {
       color: 'hsl(0, 87%, 67%)',
+      fontSize: '13px',
       fontStyle: 'italic',
+      lineHeight: '1.75',
       paddingTop: '12px',
     },
     isInvalid: {
