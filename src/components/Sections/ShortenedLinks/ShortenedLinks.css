@@ -2,3 +2,9 @@
   padding: 0 60px;
   background-color: #F0F1F6;
 }
+
+@media screen and (max-width: 600px) {
+  .shortened-links-container {
+    padding: 0 30px;
+  }
+}

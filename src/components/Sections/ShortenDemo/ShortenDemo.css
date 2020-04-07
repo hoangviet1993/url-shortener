@@ -24,6 +24,7 @@
 
 @media screen and (max-width: 600px) {
   .violet-container {
+    margin: 0 30px;
     background-image: url("bg-shorten-mobile.svg");
   }
 }
